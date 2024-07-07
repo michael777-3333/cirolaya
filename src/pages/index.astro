@@ -1,0 +1,196 @@
+---
+import ciroolaya from "../../public/ciroolaya.jpeg";
+import com from "../../public/com.png";
+import emp from "../../public/emp.png";
+import sab from "../../public/sab.png";
+import { SEO } from "astro-seo";
+import "bootstrap/dist/css/bootstrap.css";
+---
+
+<html lang="en">
+  <head>
+    <SEO
+      title="ciro olaya"
+      description="Un hombre con más de seis décadas de experiencia vital, cuya dedicación y compromiso se reflejan en su carrera como médico. Su profundo conocimiento y habilidades en el campo de la medicina han impactado positivamente la vida de muchas personas a lo largo de los años."
+      openGraph={{
+        basic: {
+          title: "Foto Ciro Olaya",
+          type: "Foto de acelas",
+          image: ciroolaya.src,
+        },
+      }}
+      extend={{
+        link: [{ rel: "ciro", href: ciroolaya.src }],
+        meta: [
+          {
+            name: "Ciro olaya",
+            content: ciroolaya.src,
+          },
+          {
+            name: "twitter:title",
+            content: "Acelas Ceña",
+          },
+          {
+            name: "twitter:description",
+            content: "Ciro Olaya",
+          },
+        ],
+      }}
+    />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <style>
+      body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+      .container-fluid {
+        padding: 20px;
+      }
+      h3 {
+        color: #333;
+        margin-bottom: 20px;
+      }
+      img {
+        width: 400px;
+        height: 450px;
+        border-radius: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+      p {
+        color: #555;
+        line-height: 1.6;
+        text-align: center;
+        max-width: 600px;
+        margin: 20px auto;
+      }
+      .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+      .btn:hover {
+        background-color: #45a049;
+      }
+      .contenedor-texto {
+        height: 400px;
+      }
+    </style>
+    <title>Astro</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-center">
+            <h3>Ciro Olaya</h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-auto col-sm-12 col-lg-6">
+          <div style="display:flex; justify-content: center;">
+            <img src={ciroolaya.src} alt="Foto de Ciro Olaya" />
+          </div>
+        </div>
+
+        <div class="col-xs-auto col-sm-12 col-lg-6">
+          <div
+            class="contenedor-texto d-flex justify-content-center align-items-center"
+          >
+            <p>
+              Un hombre con más de seis décadas de experiencia vital, cuya
+              dedicación y compromiso se reflejan en su carrera como médico. Su
+              profundo conocimiento y habilidades en el campo de la medicina han
+              impactado positivamente la vida de muchas personas a lo largo de
+              los años. Es una persona respetada por sus colegas y pacientes,
+              conocida por su sabiduría acumulada y su enfoque profesional. Con
+              un equilibrio entre su vida profesional y personal, sigue siendo
+              una figura inspiradora para aquellos que lo rodean, demostrando
+              que la dedicación y la pasión por el bienestar de los demás no
+              tienen límites de edad.
+            </p>
+          </div>
+          <!-- <div class="d-flex justify-content-center">
+			<a href="#" class="btn">Conoce más</a>
+		  </div> -->
+        </div>
+      </div>
+      <div class="row mt-5">
+        <div class="col-md-4 d-flex justify-content-center">
+          <div class="card w-75 mb-5">
+            <div class="w-100 d-flex justify-content-center">
+              <img
+                src={com.src}
+                class="card-img-top w-75 h-75"
+                alt="Compromiso"
+              />
+            </div>
+
+            <div class="card-body">
+              <h5 class="card-title">Compromiso</h5>
+              <p class="card-text">
+                El Dr. Olaya demuestra un compromiso inquebrantable hacia sus
+                pacientes, asegurando siempre brindar la mejor atención posible.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Más Información</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card w-75 mb-5">
+            <div class="w-100 d-flex justify-content-center">
+              <img
+                src={emp.src}
+                class="card-img-top w-75 h-75"
+                alt="Compromiso"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Empatía</h5>
+              <p class="card-text">
+                Con una gran capacidad de empatía, el Dr. Olaya entiende y se
+                conecta con las emociones y preocupaciones de sus pacientes.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Más Información</a> -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card w-75 mb-5">
+            <div class="w-100 d-flex justify-content-center">
+              <img
+                src={sab.src}
+                class="card-img-top w-75 h-75"
+                alt="Compromiso"
+              />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Sabiduría</h5>
+              <p class="card-text">
+                Con más de seis décadas de experiencia, el Dr. Olaya posee una
+                sabiduría excepcional que aplica en cada diagnóstico y
+                tratamiento.
+              </p>
+              <!-- <a href="#" class="btn btn-primary">Más Información</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
